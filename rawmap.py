@@ -151,6 +151,8 @@ class Loader(object):
                         for i in range(next_element, data):
                             return_data.append('')
                         next_element = data + 1
+                    else:
+                        next_element += 1
 
                     return_data += [self._map_reader()]
 
